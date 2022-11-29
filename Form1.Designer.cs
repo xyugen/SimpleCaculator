@@ -29,24 +29,24 @@
         private void InitializeComponent()
         {
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.txtBox_res = new System.Windows.Forms.TextBox();
+            this.btn_reset = new System.Windows.Forms.Button();
             this.btn_1 = new System.Windows.Forms.Button();
             this.btn_2 = new System.Windows.Forms.Button();
             this.btn_3 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btn_add = new System.Windows.Forms.Button();
             this.btn_4 = new System.Windows.Forms.Button();
             this.btn_5 = new System.Windows.Forms.Button();
             this.btn_6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.btn_sub = new System.Windows.Forms.Button();
             this.btn_7 = new System.Windows.Forms.Button();
             this.btn_8 = new System.Windows.Forms.Button();
             this.btn_9 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
+            this.btn_mult = new System.Windows.Forms.Button();
             this.btn_point = new System.Windows.Forms.Button();
             this.btn_0 = new System.Windows.Forms.Button();
             this.btn_equal = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.btn_reset = new System.Windows.Forms.Button();
+            this.btn_div = new System.Windows.Forms.Button();
+            this.txtBox_res = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,34 +56,36 @@
             this.flowLayoutPanel1.Controls.Add(this.btn_1);
             this.flowLayoutPanel1.Controls.Add(this.btn_2);
             this.flowLayoutPanel1.Controls.Add(this.btn_3);
-            this.flowLayoutPanel1.Controls.Add(this.button3);
+            this.flowLayoutPanel1.Controls.Add(this.btn_add);
             this.flowLayoutPanel1.Controls.Add(this.btn_4);
             this.flowLayoutPanel1.Controls.Add(this.btn_5);
             this.flowLayoutPanel1.Controls.Add(this.btn_6);
-            this.flowLayoutPanel1.Controls.Add(this.button7);
+            this.flowLayoutPanel1.Controls.Add(this.btn_sub);
             this.flowLayoutPanel1.Controls.Add(this.btn_7);
             this.flowLayoutPanel1.Controls.Add(this.btn_8);
             this.flowLayoutPanel1.Controls.Add(this.btn_9);
-            this.flowLayoutPanel1.Controls.Add(this.button11);
+            this.flowLayoutPanel1.Controls.Add(this.btn_mult);
             this.flowLayoutPanel1.Controls.Add(this.btn_point);
             this.flowLayoutPanel1.Controls.Add(this.btn_0);
             this.flowLayoutPanel1.Controls.Add(this.btn_equal);
-            this.flowLayoutPanel1.Controls.Add(this.button15);
+            this.flowLayoutPanel1.Controls.Add(this.btn_div);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 93);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(340, 381);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
-            // txtBox_res
+            // btn_reset
             // 
-            this.txtBox_res.Font = new System.Drawing.Font("Segoe UI", 22F);
-            this.txtBox_res.Location = new System.Drawing.Point(12, 12);
-            this.txtBox_res.Multiline = true;
-            this.txtBox_res.Name = "txtBox_res";
-            this.txtBox_res.Size = new System.Drawing.Size(340, 75);
-            this.txtBox_res.TabIndex = 1;
-            this.txtBox_res.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtBox_res.TextChanged += new System.EventHandler(this.txtBox_res_TextChanged);
+            this.btn_reset.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btn_reset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_reset.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_reset.Location = new System.Drawing.Point(3, 3);
+            this.btn_reset.Name = "btn_reset";
+            this.btn_reset.Size = new System.Drawing.Size(334, 34);
+            this.btn_reset.TabIndex = 1;
+            this.btn_reset.Text = "Reset";
+            this.btn_reset.UseVisualStyleBackColor = false;
+            this.btn_reset.Click += new System.EventHandler(this.btn_reset_Click);
             // 
             // btn_1
             // 
@@ -96,7 +98,7 @@
             this.btn_1.TabIndex = 0;
             this.btn_1.Text = "1";
             this.btn_1.UseVisualStyleBackColor = false;
-            this.btn_1.Click += new System.EventHandler(this.btn_1_Click);
+            this.btn_1.Click += new System.EventHandler(this.btnNum_Click);
             // 
             // btn_2
             // 
@@ -109,7 +111,7 @@
             this.btn_2.TabIndex = 0;
             this.btn_2.Text = "2";
             this.btn_2.UseVisualStyleBackColor = false;
-            this.btn_2.Click += new System.EventHandler(this.btn_2_Click);
+            this.btn_2.Click += new System.EventHandler(this.btnNum_Click);
             // 
             // btn_3
             // 
@@ -122,18 +124,20 @@
             this.btn_3.TabIndex = 0;
             this.btn_3.Text = "3";
             this.btn_3.UseVisualStyleBackColor = false;
+            this.btn_3.Click += new System.EventHandler(this.btnNum_Click);
             // 
-            // button3
+            // btn_add
             // 
-            this.button3.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button3.Location = new System.Drawing.Point(258, 43);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(79, 79);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "+";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btn_add.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.btn_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_add.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btn_add.Location = new System.Drawing.Point(258, 43);
+            this.btn_add.Name = "btn_add";
+            this.btn_add.Size = new System.Drawing.Size(79, 79);
+            this.btn_add.TabIndex = 0;
+            this.btn_add.Text = "+";
+            this.btn_add.UseVisualStyleBackColor = false;
+            this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
             // 
             // btn_4
             // 
@@ -146,6 +150,7 @@
             this.btn_4.TabIndex = 0;
             this.btn_4.Text = "4";
             this.btn_4.UseVisualStyleBackColor = false;
+            this.btn_4.Click += new System.EventHandler(this.btnNum_Click);
             // 
             // btn_5
             // 
@@ -158,6 +163,7 @@
             this.btn_5.TabIndex = 0;
             this.btn_5.Text = "5";
             this.btn_5.UseVisualStyleBackColor = false;
+            this.btn_5.Click += new System.EventHandler(this.btnNum_Click);
             // 
             // btn_6
             // 
@@ -170,18 +176,20 @@
             this.btn_6.TabIndex = 0;
             this.btn_6.Text = "6";
             this.btn_6.UseVisualStyleBackColor = false;
+            this.btn_6.Click += new System.EventHandler(this.btnNum_Click);
             // 
-            // button7
+            // btn_sub
             // 
-            this.button7.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button7.Location = new System.Drawing.Point(258, 128);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(79, 79);
-            this.button7.TabIndex = 0;
-            this.button7.Text = "-";
-            this.button7.UseVisualStyleBackColor = false;
+            this.btn_sub.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.btn_sub.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_sub.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btn_sub.Location = new System.Drawing.Point(258, 128);
+            this.btn_sub.Name = "btn_sub";
+            this.btn_sub.Size = new System.Drawing.Size(79, 79);
+            this.btn_sub.TabIndex = 0;
+            this.btn_sub.Text = "-";
+            this.btn_sub.UseVisualStyleBackColor = false;
+            this.btn_sub.Click += new System.EventHandler(this.btn_sub_Click);
             // 
             // btn_7
             // 
@@ -194,6 +202,7 @@
             this.btn_7.TabIndex = 0;
             this.btn_7.Text = "7";
             this.btn_7.UseVisualStyleBackColor = false;
+            this.btn_7.Click += new System.EventHandler(this.btnNum_Click);
             // 
             // btn_8
             // 
@@ -206,6 +215,7 @@
             this.btn_8.TabIndex = 0;
             this.btn_8.Text = "8";
             this.btn_8.UseVisualStyleBackColor = false;
+            this.btn_8.Click += new System.EventHandler(this.btnNum_Click);
             // 
             // btn_9
             // 
@@ -218,18 +228,20 @@
             this.btn_9.TabIndex = 0;
             this.btn_9.Text = "9";
             this.btn_9.UseVisualStyleBackColor = false;
+            this.btn_9.Click += new System.EventHandler(this.btnNum_Click);
             // 
-            // button11
+            // btn_mult
             // 
-            this.button11.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button11.Location = new System.Drawing.Point(258, 213);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(79, 79);
-            this.button11.TabIndex = 0;
-            this.button11.Text = "*";
-            this.button11.UseVisualStyleBackColor = false;
+            this.btn_mult.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.btn_mult.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_mult.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btn_mult.Location = new System.Drawing.Point(258, 213);
+            this.btn_mult.Name = "btn_mult";
+            this.btn_mult.Size = new System.Drawing.Size(79, 79);
+            this.btn_mult.TabIndex = 0;
+            this.btn_mult.Text = "*";
+            this.btn_mult.UseVisualStyleBackColor = false;
+            this.btn_mult.Click += new System.EventHandler(this.btn_mult_Click);
             // 
             // btn_point
             // 
@@ -242,6 +254,7 @@
             this.btn_point.TabIndex = 0;
             this.btn_point.Text = ".";
             this.btn_point.UseVisualStyleBackColor = false;
+            this.btn_point.Click += new System.EventHandler(this.btnNum_Click);
             // 
             // btn_0
             // 
@@ -266,30 +279,32 @@
             this.btn_equal.TabIndex = 0;
             this.btn_equal.Text = "=";
             this.btn_equal.UseVisualStyleBackColor = false;
+            this.btn_equal.Click += new System.EventHandler(this.btn_equal_Click);
             // 
-            // button15
+            // btn_div
             // 
-            this.button15.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button15.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button15.Location = new System.Drawing.Point(258, 298);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(79, 79);
-            this.button15.TabIndex = 0;
-            this.button15.Text = "/";
-            this.button15.UseVisualStyleBackColor = false;
+            this.btn_div.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.btn_div.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_div.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btn_div.Location = new System.Drawing.Point(258, 298);
+            this.btn_div.Name = "btn_div";
+            this.btn_div.Size = new System.Drawing.Size(79, 79);
+            this.btn_div.TabIndex = 0;
+            this.btn_div.Text = "/";
+            this.btn_div.UseVisualStyleBackColor = false;
+            this.btn_div.Click += new System.EventHandler(this.btn_div_Click);
             // 
-            // btn_reset
+            // txtBox_res
             // 
-            this.btn_reset.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btn_reset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_reset.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_reset.Location = new System.Drawing.Point(3, 3);
-            this.btn_reset.Name = "btn_reset";
-            this.btn_reset.Size = new System.Drawing.Size(334, 34);
-            this.btn_reset.TabIndex = 1;
-            this.btn_reset.Text = "Reset";
-            this.btn_reset.UseVisualStyleBackColor = false;
+            this.txtBox_res.Font = new System.Drawing.Font("Segoe UI", 22F);
+            this.txtBox_res.Location = new System.Drawing.Point(12, 12);
+            this.txtBox_res.Multiline = true;
+            this.txtBox_res.Name = "txtBox_res";
+            this.txtBox_res.Size = new System.Drawing.Size(340, 75);
+            this.txtBox_res.TabIndex = 1;
+            this.txtBox_res.Text = "0";
+            this.txtBox_res.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtBox_res.TextChanged += new System.EventHandler(this.txtBox_res_TextChanged);
             // 
             // Form1
             // 
@@ -314,19 +329,19 @@
         private System.Windows.Forms.Button btn_1;
         private System.Windows.Forms.Button btn_2;
         private System.Windows.Forms.Button btn_3;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btn_add;
         private System.Windows.Forms.Button btn_4;
         private System.Windows.Forms.Button btn_5;
         private System.Windows.Forms.Button btn_6;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button btn_sub;
         private System.Windows.Forms.Button btn_7;
         private System.Windows.Forms.Button btn_8;
         private System.Windows.Forms.Button btn_9;
-        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button btn_mult;
         private System.Windows.Forms.Button btn_point;
         private System.Windows.Forms.Button btn_0;
         private System.Windows.Forms.Button btn_equal;
-        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button btn_div;
     }
 }
 
